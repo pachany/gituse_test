@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>Full Background Cover</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .back_img {
+
+        border: 0;
+        padding: 0;
+        background-image: url('help.jpg');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+
+        /* Set rules to fill background */
+        min-height: 100%;
+        min-width: 1024px;
+
+        /* Set up proportionate scaling */
+        width: 100%;
+        height: auto;
+
+        /* Set up positioning */
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        /* Specific to this particular image */
+        .back_img {
+            left: 50%;
+            margin-left: -512px;
+            /* 50% */
+        }
+    }
+</style>
+
+<body>
+    <h1>케어누리 서비스</h1>
+    <div class="back_img"></div>
+    
+</body>
+
+</html>
